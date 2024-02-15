@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+    --secondary: #fd413c;
+    --main: #212529;
+    --primary: #fbba2c;
+    --color: #fff;
+
+    --amimate: cubic-bezier(0, 0.71, 0.85, 0.49);
+
+    background: var(--main);
+    color: var(--color);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.wrapper {
+    padding: 0 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    background-color: var(--secondary);
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+nav {
+    justify-self: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s var(--amimate);
+}
+
+a:hover {
+    color: var(--color);
+}
+
+.info {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-size: 1.2rem;
+}
+
+h1 {
+    padding: 2rem 0 1.2rem;
+    font-size: 2rem;
+}
+
+.info__text {
+    width: 300px;
+    padding-right: 20rem;
+    padding-top: 2rem;
+}
+
+.dark {
+    color: var(--secondary);
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.highlight-2 {
+    color: var(--secondary);
+}
+
+.me-photo {
+    position: absolute;
+    z-index: -1;
+    width: 500px;
+    transform: translate(50%);
+}
+
+.colaj {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    gap: 0.25rem;
+}
+
+.colaj .item-1 {
+    grid-column: 1/2;
+}
+
+.colaj .item-2 {
+    grid-column: 1/3;
+}
+
+.colaj .item-3 {
+    grid-row: 1/2;
+}
+
+.colaj .item-4 {
+    /* grid-column: 1/2; */
+}
+
+.colaj .item-5 {
+    /* grid-column: 1/2; */
+}
+
+.colaj .item-6 {
+    grid-row: 1/3;
+}
+
+.colaj .item-7 {
+    grid-column: 3/5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 1rem;
+    width: 350px;
+    height: 180px;
+    display: flex;
+    flex-flow: column;
+    padding: 2rem;
+    border: 1px solid #000;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.card-logo {
+    position: relative;
+    display: flex;
+}
+
+.card .logo-1 {
+    background-color: var(--primary);
+    transform: translate(50%);
+}
+
+.card-number {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.card-cvc {
+    display: flex;
+    justify-content: end;
+}
+
+.card-owner {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dontaion {
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+}
+
+footer {
+    width: 100%;
+}
+
+hr {
+    margin: 1rem 0;
+    border: none;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.footer-wrapper > * {
+    margin: 1rem 0;
+}
